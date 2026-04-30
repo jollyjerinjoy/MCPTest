@@ -20,7 +20,7 @@ test.describe('SauceDemo Functional Test Suite', () => {
     await page.click('#login-button');
     await expect(page).toHaveURL(/inventory.html/);
     await expect(page.locator('.title')).toHaveText('Products');
-
+    //test branch merge saved
     // 5. Log out from the application if possible (via menu or user icon).
     await page.click('#react-burger-menu-btn');    
     await page.waitForSelector('#logout_sidebar_link', { state: 'visible' });    
